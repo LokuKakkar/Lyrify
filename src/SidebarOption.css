@@ -1,0 +1,28 @@
+.sidebar_option{
+    display: flex;
+    align-items: center;
+    color:gray;
+    /* padding: 20px; */
+    height: 40px;
+    cursor: pointer;
+    transition: 200ms color ease-in;
+}
+
+.sidebar_option:hover{
+    color: white;
+}
+
+.sidebar_option_icon{
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.sidebar_option > p {
+
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+
+}
