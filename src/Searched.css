@@ -1,0 +1,14 @@
+.albumsList{
+    display: flex;
+
+}
+.playlistsList{
+    display: flex;
+}
+.tracks{
+    margin-bottom: 40px;
+}
+.artistsList{
+    display: flex;
+    margin-bottom: 50px;
+}

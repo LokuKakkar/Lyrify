@@ -1,0 +1,44 @@
+.artist_card{
+    width: 170px;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    margin: 10px;
+    padding: 10px;
+    /* padding-right: 20px; */
+    margin-bottom: 60px;
+}
+
+
+.artist_media{
+    margin: 6px;
+    margin-right: 10px;
+    max-width: 150px;
+    border-radius: 50%;
+    max-height: 170px;
+}
+
+
+.play_button {
+    position: absolute;
+    top: 70%;
+    z-index: 2;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.artist_card:hover{
+    opacity: 0.6;
+}
+.artist_card:hover .play_button {
+    opacity: 1;
+}
+
+.play_circle{
+    font-size: 80px !important;
+    color: green;
+}
+

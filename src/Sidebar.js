@@ -16,11 +16,13 @@ function Sidebar(){
         document.getElementById("SearchInput").focus();
     }
 
+
+
     return(
         <div className="sidebar">
-            <img src={logopng} className="lyrify_logo" />
+            <img src={logopng} className="lyrify_logo"  />
 
-            <SidebarOption title='Home' Icon={HomeIcon} />
+            <SidebarOption title='Home' Icon={HomeIcon}  />
             <SidebarOption title='Search' Icon={SearchIcon} onClick={handleSearchClick} />
             <SidebarOption title='Your Library' Icon={LibraryMusicIcon} />
 

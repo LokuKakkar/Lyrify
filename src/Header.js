@@ -13,11 +13,10 @@ function Header({spotify}){
 
     const [searchInput, setSearchInput] = useState("");
 
-    const [searchResults, setSearchResults] =useState("");
-
 
     async function search(event){
-      
+      // console.log(event)
+      // if(event.preventDefault())
       event.preventDefault();
       console.log("searching for " + searchInput + " token: " + token)
     
@@ -35,8 +34,7 @@ function Header({spotify}){
     var searchResultId = await fetch('https://api.spotify.com/v1/search?q=' + searchInput + '&type=album%2Cplaylist%2Cartist%2Ctrack' 
     ,searchResultParameters)
     .then(response => response.json())
-    .then(data => console.log(data))
-    .then(data => setSearchResults(data));
+    .then(data => console.log(data));
 
   }
 
@@ -45,6 +43,18 @@ function Header({spotify}){
 
         <div className='header_left'>
             <SearchIcon />
+            {/* <form role='search' onChange={search} onSubmit={hehe} >
+                <input 
+                    placeholder='Search for Playlists, Artists, Songs'
+                    type='text'
+                    name={searchbarData} 
+                    // onChange={search} 
+                    // onSubmit={hehe}
+                    
+                />
+                <button type='submit'>Search</button>
+            </form> */}
+
             <form>
               <input placeholder='search for artist, track or album' type='input' 
               onKeyDown={event =>{

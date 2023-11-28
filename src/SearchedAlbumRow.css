@@ -1,0 +1,41 @@
+.card{
+    width: 180px;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    margin: 10px;
+    padding: 10px;
+    /* padding-right: 20px; */
+    margin-bottom: 60px;
+}
+
+.card_media{
+    margin: 6px;
+    margin-right: 10px;
+    width: 160px;
+}
+
+
+.play_button {
+    position: absolute;
+    top: 70%;
+    z-index: 2;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+  
+.card:hover .play_button {
+    opacity: 1;
+}
+
+.play_circle{
+    font-size: 80px !important;
+    color: green;
+}
+
+.card:hover{
+    opacity: 0.6;
+}

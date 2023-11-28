@@ -2,9 +2,16 @@
     margin-left: 20px;
     padding: 20px;
     display: flex;
+    
     align-items: center;
     z-index: 100;
     color: white;
+}
+
+.rowSong{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .songrow:hover{
@@ -30,4 +37,8 @@
 .songrow_album{
     height: 40px;
     width: 40px;
+}
+.explicit{
+    color: black;
+    background-color: gray;
 }
