@@ -29,6 +29,7 @@ function NotSearched({discover_weekly}){
             <FavoriteIcon fontSize="large" />
             <MoreHorizIcon />
         </div>
+        
 
         {/* LIST OF SONGS */}
 

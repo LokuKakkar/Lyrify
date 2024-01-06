@@ -56,6 +56,12 @@ const reducer = (state,action) =>{
               top_artists: action.top_artists,
             };
 
+        case "SET_PLAYLIST":
+            return {
+                ...state,
+                playlist: action.playlist,
+            };
+
         default:
             return state;
     }

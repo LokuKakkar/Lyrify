@@ -55,7 +55,7 @@ function Header({spotify}){
                 <button type='submit'>Search</button>
             </form> */}
 
-            <form>
+            {/* <form> */}
               <input placeholder='search for artist, track or album' type='input' 
               onKeyDown={event =>{
                 if(event.key=="Enter"){
@@ -64,13 +64,14 @@ function Header({spotify}){
               }}
               onChange={event => setSearchInput(event.target.value)}
               id='SearchInput'
+              className="form_input"
               >
 
               </input>
-              <button onClick={search} id='searchButton'>
-                Search
-              </button>
-            </form>
+              {/* <button onClick={search} id='searchButton' className='form_button'> */}
+                {/* Search */}
+              {/* </button> */}
+            {/* </form> */}
             
             
             

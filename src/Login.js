@@ -1,5 +1,5 @@
 import React from "react";
-import LyrifyLogo from "./images/LyrifyLogo.jpg"
+// import LyrifyLogo from "./images/LyrifyLogo.jpg"
 import logopng from "./images/logopng.png";
 import "./Login.css"
 import {loginUrl} from "./spotify.js";

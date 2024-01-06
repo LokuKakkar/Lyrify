@@ -15,6 +15,11 @@ import SongRow from "./SongRow";
 import Searched from "./Searched";
 import NotSearched from "./NotSearched";
 
+
+const delay = ms => new Promise(
+    resolve => setTimeout(resolve, ms)
+  );
+
 function Body({spotify}){
 
     // const [{discover_weekly},dispatch] = useDataLayerValue();
@@ -27,11 +32,21 @@ function Body({spotify}){
     const [searchInput, setSearchInput] = useState("");
     const [searchResults,setSearchResults] =useState(null);
 
+    const handleInputChange = async (event) => {
+        const newQuery=event.target.value;
+        if(newQuery=="") {setSearchResults(null);
+        setSearchInput(null);}
+        
+        await setSearchInput(newQuery);
+        await delay(1000)
+
+        search(newQuery);
+    }
 
     async function search(event){
       // console.log(event)
       // if(event.preventDefault())
-      event.preventDefault();
+    //   event.preventDefault();
       console.log("searching for " + searchInput + " token: " + token)
     
 
@@ -69,35 +84,25 @@ function Body({spotify}){
             <div className='header'>
 
                 <div className='header_left'>
-                    <SearchIcon />
-                    {/* <form role='search' onChange={search} onSubmit={hehe} >
-                        <input 
-                            placeholder='Search for Playlists, Artists, Songs'
-                            type='text'
-                            name={searchbarData} 
-                            // onChange={search} 
-                            // onSubmit={hehe}
-                            
-                        />
-                        <button type='submit'>Search</button>
-                    </form> */}
-
-                    <form>
-                    <input placeholder='search for artist, track or album' type='input' 
-                    onKeyDown={event =>{
-                        if(event.key=="Enter"){
-                        search(event);
-                        }
-                    }}
-                    onChange={event => setSearchInput(event.target.value)}
+                    <SearchIcon className="SearchIcon" />
+                    
+                    <input placeholder='search for artist, track or album' type='input'
+                    value={searchInput} 
+                    // onKeyDown={event =>{
+                    //     if(event.key=="Enter"){
+                    //     search(event);
+                    //     }
+                    // }}
+                    onChange={handleInputChange}
                     id='SearchInput'
+                    className="form_input"
                     >
 
                     </input>
-                    <button onClick={search} id='searchButton'>
+                    {/* <button onClick={search} id='searchButton'>
                         Search
-                    </button>
-                    </form>
+                    </button> */}
+                    
                     
                     
                     
@@ -112,7 +117,7 @@ function Body({spotify}){
 
             {/* HERE ENDSS HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */}
 
-            {searchResults ? <Searched searchResults={searchResults} />  : <NotSearched discover_weekly={discover_weekly} /> }
+            {searchInput && searchResults ? <Searched searchResults={searchResults} />  : <NotSearched discover_weekly={discover_weekly} /> }
 
             
 
