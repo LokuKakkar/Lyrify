@@ -6,7 +6,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import SongRow from "./SongRow";
 
-function NotSearched({discover_weekly}){
+function NotSearched({discover_weekly,spotify}){
   return (
     <div>
 
@@ -34,7 +34,7 @@ function NotSearched({discover_weekly}){
         {/* LIST OF SONGS */}
 
         {discover_weekly?.tracks.items.map(item => (
-            <SongRow track={item.track}  />
+            <SongRow track={item.track} spotify={spotify} />
         ))}
 
         </div>    

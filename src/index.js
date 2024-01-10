@@ -5,12 +5,24 @@ import App from './App';
 import { DataLayer } from './DataLayer';
 import reducer, { initialState } from './reducer';
 import reportWebVitals from './reportWebVitals';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import Layout from './Layout';
+import LyricsScreen from './LyricsScreen';
+
+const router=createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<Layout />}>
+      <Route path='' element={<App /> } />
+      <Route path='/lyricsscreen' element={<LyricsScreen />} />
+    </Route>
+  )
+)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <DataLayer initialState={initialState} reducer={reducer} >
-      <App />
+      <RouterProvider router={router} />
     </DataLayer>
     
   </React.StrictMode>

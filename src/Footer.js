@@ -14,7 +14,12 @@ import LyricsIcon from '@mui/icons-material/Lyrics';
 
 
 
-function Footer(){
+function Footer({track}){
+
+    var trackname= track? track.name: "Redbone";
+    var artistnames= track? track.artists.map((artist)=>artist.name).join(", ") : "Childish Gambino";
+    var albumimgurl= track? track.album.images[0].url :  "https://upload.wikimedia.org/wikipedia/en/1/10/Childish_Gambino_-_Awaken%2C_My_Love%21.png";
+
 
     return(
         <div className="footer">
@@ -22,12 +27,12 @@ function Footer(){
 
             <div className="footer_left">
                 {/* <p> Album and Song Details</p> */}
-                <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Childish_Gambino_-_Awaken%2C_My_Love%21.png" className="footer_album_logo" />
+                <img src={albumimgurl} className="footer_album_logo" />
 
                 <div className="footer_song_info">
 
-                    <h4> Redbone </h4>
-                    <p> Childish Gambino </p>
+                    <h4> {trackname} </h4>
+                    <p> {artistnames} </p>
 
                 </div>
 

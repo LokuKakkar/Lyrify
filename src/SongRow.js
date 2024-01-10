@@ -1,9 +1,25 @@
 import React from 'react'
 import './SongRow.css'
+import { useNavigate } from 'react-router-dom'
 
-function SongRow({track}) {
+function SongRow({track,spotify}) {
+
+  const navigate =useNavigate();
+
+  const handleTrackClick =() => {
+
+    navigate("/lyricsscreen" , {state :
+    {
+      track:track,
+      trackid:track.id,
+      spotify:spotify
+    }})
+
+  }
+
+
   return (
-    <div className='songrow'>
+    <div className='songrow' onClick={handleTrackClick}>
         
         <img className='songrow_album' src={track.album.images[0].url}  />
         <div className='rowSong'>

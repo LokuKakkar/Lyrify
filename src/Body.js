@@ -20,7 +20,7 @@ const delay = ms => new Promise(
     resolve => setTimeout(resolve, ms)
   );
 
-function Body({spotify}){
+function Body({spotify , trackid}){
 
     // const [{discover_weekly},dispatch] = useDataLayerValue();
 
@@ -117,7 +117,7 @@ function Body({spotify}){
 
             {/* HERE ENDSS HEADERRRRRRRRRRRRRRRRRRRRRRRRRRRRRR */}
 
-            {searchInput && searchResults ? <Searched searchResults={searchResults} />  : <NotSearched discover_weekly={discover_weekly} /> }
+            {searchInput && searchResults ? <Searched searchResults={searchResults} spotify={spotify} />  : <NotSearched discover_weekly={discover_weekly} spotify={spotify} /> }
 
             
 

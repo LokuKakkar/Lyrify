@@ -4,8 +4,8 @@ import Sidebar from "./Sidebar";
 import Body from "./Body";
 import Footer from "./Footer";
 
-function Player({spotify}){
-
+function Player({spotify,call,trackid}){
+    console.log({call});
     return (
         <div className="player">
             
@@ -13,8 +13,8 @@ function Player({spotify}){
 
                 <Sidebar spotify={spotify} />
 
-
-                <Body spotify={spotify}/>
+                {{call}=="login" ? <Body spotify={spotify} /> : <Body spotify={spotify} trackid={trackid} /> }
+                {/* <Body spotify={spotify}/> */}
             
             </div>
            

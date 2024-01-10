@@ -8,7 +8,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { useDataLayerValue } from "./DataLayer";
 import NotSearched from "./NotSearched";
 
-function Sidebar({spotify}){
+function Sidebar({spotify , ancestor}){
 
     const [{playlists},dispatch] = useDataLayerValue();
 
@@ -17,6 +17,7 @@ function Sidebar({spotify}){
     }
 
     function handleHomeClick(){
+        document.getElementById("SearchInput").value=null;
         document.getElementById("SearchInput").value=null;
     }
 

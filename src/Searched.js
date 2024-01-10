@@ -4,7 +4,7 @@ import SearchedSongRow from './SearchedSongRow'
 import SearchedAlbumRow from './SearchedAlbumRow'
 import SearchedArtistsRow from './SearchedArtistsRow'
 
-function Searched({searchResults}){
+function Searched({searchResults , spotify}){
   return (
     <div className='Searched'>
         
@@ -13,7 +13,7 @@ function Searched({searchResults}){
             <h2>Top Results</h2>
 
             {searchResults?.tracks?.items?.slice(0,4).map((item,index) =>(
-                <SearchedSongRow track={item} />
+                <SearchedSongRow track={item} spotify={spotify} />
             ))}
 
         </div>
