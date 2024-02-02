@@ -5,6 +5,7 @@
     /* flex: 0.8; */
     height: 87vh;
     color: white;
+    width: 97%;
     background: linear-gradient(rgb(91,87,115) , rgba(0,0,0,1));
     overflow-y: overlay;
     /* margin-bottom: 200px; */
@@ -15,6 +16,7 @@
     background-color: #B25F53;
     border-radius: 20px;
     flex: 0.63;
+    min-width: 63%;
     padding: 35px;
     overflow-y: overlay;
 
@@ -34,8 +36,9 @@
 .lyrics_meaning{
     padding-left: 10px;
     flex: 0.37;
+    min-width: 28%;
     font-family:'Courier New', Courier, monospace;
-    font-size: 22px;
+    font-size: 20px;
     overflow-y: overlay;
 }
 

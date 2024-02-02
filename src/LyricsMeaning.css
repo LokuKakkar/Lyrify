@@ -1,0 +1,50 @@
+.track_image_lyrics_body_right{
+    max-width: 360px;
+    border-radius: 10px;
+}
+
+.lyrics_body_right_top{
+    padding-left: 10px;
+}
+.album_name_lyrics_body_right_top{
+    text-decoration: none;
+}
+.album_name_lyrics_body_right_top :hover{
+    text-decoration: underline;   
+    text-shadow: 1px;
+}
+
+.lyrics_body_right_form{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: whitesmoke;
+}
+.select_list_lyrics_body_right_select{
+    max-width: 120px;
+    background-color: transparent;
+}
+
+.select_list_lyrics_body_right{
+    background-color: transparent;
+    color: whitesmoke;
+    margin: 0;
+    border: 0;
+    /* position: relative; */
+    z-index: 1;
+    height: 30px;
+    border-radius: 25px;
+    width: 100%;
+    outline: 0;
+}
+
+option{
+    font-weight: bold;
+    background-color: transparent;
+    color: green;
+}
+
+hr{
+    border: 1px solid rgba(40, 40, 40, 0.594);
+    width: 90%;
+    margin: 10px auto;
+}

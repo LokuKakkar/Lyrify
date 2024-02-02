@@ -1,8 +1,9 @@
 import React from 'react'
 import './Searched.css'
 import SearchedSongRow from './SearchedSongRow'
-import SearchedAlbumRow from './SearchedAlbumRow'
-import SearchedArtistsRow from './SearchedArtistsRow'
+import SearchedAlbumRow from './albumFolder/SearchedAlbumRow'
+import SearchedPlaylistRow from './SearchedPlaylistRow'
+import SearchedArtistsRow from './artistFolder/SearchedArtistsRow'
 
 function Searched({searchResults , spotify}){
   return (
@@ -23,7 +24,7 @@ function Searched({searchResults , spotify}){
             <h2>Albums</h2>
             <div className='albumsList'>
                 {searchResults?.albums?.items?.slice(0,4).map(item => (
-                    <SearchedAlbumRow album={item} />
+                    <SearchedAlbumRow album={item} spotify={spotify} />
                 ))}
             </div>
 
@@ -37,7 +38,7 @@ function Searched({searchResults , spotify}){
             <div className='playlistsList'>
                 
                 {searchResults?.playlists?.items?.slice(0,4).map(item => (
-                    <SearchedAlbumRow album={item} />
+                    <SearchedPlaylistRow playlist={item} spotify={spotify} playlistid={item.id} />
                 ))}
 
             </div>
@@ -49,7 +50,7 @@ function Searched({searchResults , spotify}){
             <div className='artistsList'>
                     
                 {searchResults?.artists?.items?.slice(0,5).map(item =>(
-                    <SearchedArtistsRow artist={item} />
+                    <SearchedArtistsRow artist={item} spotify={spotify} />
                 ))}
 
             </div>

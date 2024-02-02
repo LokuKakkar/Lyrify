@@ -1,0 +1,16 @@
+.album_body_right_top{
+    padding: 10px;
+}
+
+.artist_name_album_body_right_top{
+    text-decoration: none;
+}
+.artist_name_album_body_right_top :hover{
+    text-decoration: underline;   
+    text-shadow: 1px;
+}
+
+.artist_image_album_body_right{
+    max-width: 340px;
+    border-radius: 10px;
+}

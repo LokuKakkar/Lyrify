@@ -7,13 +7,20 @@ import reducer, { initialState } from './reducer';
 import reportWebVitals from './reportWebVitals';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Layout from './Layout';
-import LyricsScreen from './LyricsScreen';
+import LyricsScreen from './screens/LyricsScreen';
+import AlbumScreen from './screens/AlbumScreen2'
+import ArtistScreen from './screens/ArtistScreen'
+import PlaylistScreen from './screens/PlaylistScreen';
 
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<App /> } />
       <Route path='/lyricsscreen' element={<LyricsScreen />} />
+      <Route path='/albumscreen' element={<AlbumScreen />} />
+      <Route path='/artistscreen' element={<ArtistScreen />} />
+      <Route path='/playlistscreen' element={<PlaylistScreen />} />
+      
     </Route>
   )
 )

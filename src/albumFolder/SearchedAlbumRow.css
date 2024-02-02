@@ -1,5 +1,5 @@
 .card{
-    width: 180px;
+    min-width: 180px;
     z-index: 0;
     position: relative;
     overflow: hidden;

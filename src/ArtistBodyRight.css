@@ -1,0 +1,16 @@
+.artist_body_right_top{
+    padding: 10px;
+}
+
+.playlist_name_artist_body_right_top{
+    text-decoration: none;
+}
+.playlist_name_artist_body_right_top :hover{
+    text-decoration: underline;   
+    text-shadow: 1px;
+}
+
+.playlist_image_artist_body_right{
+    max-width: 300px;
+    border-radius: 10px;
+}

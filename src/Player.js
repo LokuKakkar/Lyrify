@@ -11,7 +11,7 @@ function Player({spotify,call,trackid}){
             
             <div className="player_body">
 
-                <Sidebar spotify={spotify} />
+                <Sidebar spotify={spotify} ancestor="discover_weekly" />
 
                 {{call}=="login" ? <Body spotify={spotify} /> : <Body spotify={spotify} trackid={trackid} /> }
                 {/* <Body spotify={spotify}/> */}
@@ -20,7 +20,7 @@ function Player({spotify,call,trackid}){
            
 
 
-            <Footer />
+            <Footer spotify={spotify} />
             
         </div>
     )

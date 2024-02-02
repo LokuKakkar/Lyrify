@@ -101,10 +101,7 @@ function Body({spotify , trackid}){
                     </input>
                     {/* <button onClick={search} id='searchButton'>
                         Search
-                    </button> */}
-                    
-                    
-                    
+                    </button> */} 
                     
                 </div>
 

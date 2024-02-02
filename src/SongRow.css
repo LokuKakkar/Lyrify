@@ -2,14 +2,14 @@
     margin-left: 20px;
     padding: 20px;
     display: flex;
-    
+    width: 78%;
     align-items: center;
     z-index: 100;
     color: white;
 }
 
 .rowSong{
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }

@@ -10,18 +10,30 @@ function SearchedSongRow({track,spotify}) {
 
         navigate("/lyricsscreen" , {state :
         {
-        track:track,
-        trackid:track.id,
-        spotify:spotify
+            tracknameforapi: track.name,
+            track:track,
+            trackid:track.id,
+            spotify:spotify
         }})
 
     }
+
+    const handleAlbumClick= event =>{
+        event.stopPropagation();
+        navigate("/albumscreen" , {state:
+          {
+            album:track.album,
+            spotify:spotify
+          }
+    
+        })
+      }
 
 
   return (
     <div className='songrow' onClick={handleTrackClick}>
         
-        <img className='songrow_album' src={track.album.images[0].url}  />
+        <img className='songrow_album' src={track.album.images[0].url} onClick={handleAlbumClick} />
         <div className='rowSong'>
             <div className='songrow_info'>
 
