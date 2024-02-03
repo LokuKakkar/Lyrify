@@ -1,3 +1,64 @@
+# Lyrify
+### Lyrics for Everyone
+
+`Lyrify` is a one stop solution to all the basic lyrics related needs for users.
+Be it Searching for songs, artist, albums or playlists... Users can search for the lyrics almost instantly.
+Read Lyrics, Paraphrase them to a simpler form, or eventranslate them to a choice of your language, Users can use Lyrify as a one stop solution for their Lyrics related needs.
+
+
+# Advantages
+
+## Understand Lyrics and not just lip sync them
+## Cleaner UI
+## Spotify based Authorization
+## One stop solution for Lyrics
+## Search functionalty for tracks, albums, playlists and artists
+## Dynamic flow from artist screen to lyrics screen to playlists screen to album screen
+## Never misinterpret Lyrics
+
+
+
+# Screenshots
+
+## Discover Top Tracks Weekly
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/f3f119bd-3481-4b8d-9dcb-bcb27895ad4b)
+
+## Get all tiime access to your curated Spotify Playlists
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/142d2702-f9ad-47dd-ae2f-082d46cf3b2f)
+
+## Read The Song lyrics as veried by MusixMatch
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/5f8e2c51-06e5-4d48-be2b-633880f31438)
+
+## Translate song lLyrics to your choice of Language on the go
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/754e3f4f-ae6f-4e00-a0fd-c0cf6d4cc44d)
+
+## Search for Tracks, Artists, Playlists and Albums
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/2527fa67-307e-4b86-9122-b1a7748efc3f)
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/bee23fe8-4189-49cb-b9ef-f6d93a90d55c)
+
+## Get Featured playlists on every artists page
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/ed5f846e-4c1b-4875-b672-9336eccb4679)
+
+
+## Lyrics Screen
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/3fe277ed-c11f-4192-96a5-a7cbfc0585c3)
+
+## Artist Screen
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/015cc52f-e233-4541-bd00-3516876460ea)
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/dc5f40ce-cb42-4036-bae2-51731045f224)
+
+## Album Screen
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/77b4cb8a-494f-4394-8d52-4baf52b00788)
+
+## Playlist Screen
+![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/ae8be003-cf3c-459b-8f78-47f2e4057020)
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
