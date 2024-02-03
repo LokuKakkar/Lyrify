@@ -5,6 +5,8 @@
 Be it Searching for songs, artist, albums or playlists... Users can search for the lyrics almost instantly.
 Read Lyrics, Paraphrase them to a simpler form, or eventranslate them to a choice of your language, Users can use Lyrify as a one stop solution for their Lyrics related needs.
 
+# Video 
+Check out the working video of the project here -  `https://youtu.be/BpHkG1-Ntyk`
 
 # Advantages
 
@@ -29,7 +31,7 @@ Read Lyrics, Paraphrase them to a simpler form, or eventranslate them to a choic
 ## Read The Song lyrics as veried by MusixMatch
 ![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/5f8e2c51-06e5-4d48-be2b-633880f31438)
 
-## Translate song lLyrics to your choice of Language on the go
+## Translate song lyrics to your choice of Language on the go
 ![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/754e3f4f-ae6f-4e00-a0fd-c0cf6d4cc44d)
 
 ## Search for Tracks, Artists, Playlists and Albums
