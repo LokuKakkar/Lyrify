@@ -32,7 +32,7 @@ Check out the working video of the project here -  `https://youtu.be/BpHkG1-Ntyk
 ## Get all tiime access to your curated Spotify Playlists
 ![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/142d2702-f9ad-47dd-ae2f-082d46cf3b2f)
 
-## Read The Song lyrics as veried by MusixMatch
+## Read The Song lyrics as verified by MusixMatch
 ![image](https://github.com/LokuKakkar/Lyrify/assets/98534834/5f8e2c51-06e5-4d48-be2b-633880f31438)
 
 ## Translate song lyrics to your choice of Language on the go
