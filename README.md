@@ -10,7 +10,7 @@ email id - `2021kucp1102@iiitkota.ac.in`
 password - `Lyrify@User`
 
 # Video 
-Check out the working video of the project here -  `https://youtu.be/BpHkG1-Ntyk`
+Check out the working video of the project here -  `[https://youtu.be/BpHkG1-Ntyk]`
 
 # Advantages
 
