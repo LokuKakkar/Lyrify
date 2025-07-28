@@ -54,7 +54,7 @@ function LyricsScreen() {
         // fetch(`https://spotify-lyric-api-984e7b4face0.herokuapp.com/?url=https://open.spotify.com/track/${location.state.trackid}?autoplay=true`)
         // SPOTIFY LYRIC API STOPPED WORKING
         console.log(trackNameForApi);
-        fetch(`https://some-random-api.com/others/lyrics/?title=${trackNameForApi}`)
+        fetch(`https://lrc-get-l8kn.vercel.app/api/v1/getSongData?url=https://open.spotify.com/track/${trackid}`)
         .then((response) => response.json())
 
         // .then((datas) => {setparas(datas.lines);
