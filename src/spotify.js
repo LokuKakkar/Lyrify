@@ -3,7 +3,7 @@ export const authEndpoint = "https://accounts.spotify.com/authorize";
 
 // Replace with your app's client ID, redirect URI and desired scopes
 const clientId = "fa82187641274f03b6f453d527a21165";
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://lyrify-001.netlify.app/";
 const scopes = [
   "user-read-currently-playing",
   "user-read-recently-played",
