@@ -50,7 +50,7 @@ function LyricsMeaning({fullLyrics , trackImg , albumname,track , spotify}) {
         if(selectedListOption==null){
           console.log("CHOOSE SOMETHING")
         }
-        else if(selectedListOption=="para"){
+        else if(selectedListOption==="para"){
           // AI21 PARAPHRASING
           const resp = await ai.rewrite(data);
           console.log(resp)

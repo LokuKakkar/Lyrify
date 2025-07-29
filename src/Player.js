@@ -13,7 +13,7 @@ function Player({spotify,call,trackid}){
 
                 <Sidebar spotify={spotify} ancestor="discover_weekly" />
 
-                {{call}=="login" ? <Body spotify={spotify} /> : <Body spotify={spotify} trackid={trackid} /> }
+                {{call}==="login" ? <Body spotify={spotify} /> : <Body spotify={spotify} trackid={trackid} /> }
                 {/* <Body spotify={spotify}/> */}
             
             </div>

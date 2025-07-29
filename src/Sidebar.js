@@ -14,7 +14,7 @@ function Sidebar({spotify , ancestor}){
     const [{playlists},dispatch] = useDataLayerValue();
 
     const handleSearchClick = () => {
-        if(ancestor=="discover_weekly"){
+        if(ancestor==="discover_weekly"){
             document.getElementById("SearchInput").focus();
         }
         else{

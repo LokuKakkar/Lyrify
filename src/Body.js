@@ -34,7 +34,7 @@ function Body({spotify , trackid}){
 
     const handleInputChange = async (event) => {
         const newQuery=event.target.value;
-        if(newQuery=="") {setSearchResults(null);
+        if(newQuery==="") {setSearchResults(null);
         setSearchInput(null);}
         
         await setSearchInput(newQuery);
